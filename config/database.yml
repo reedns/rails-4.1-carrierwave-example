@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: portfolio_development
+  database: carrierwave_example_development
   pool: 5
   username: reedns
   password:
@@ -9,6 +9,6 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: portfolio_development
+  database: carrierwave_example_development_test
   pool: 5
   username: reedns
