@@ -1,4 +1,4 @@
-<%= form_for(@user), html: { multipart: true } do |f| %>
+<%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
@@ -12,7 +12,10 @@
   <% end %>
 
   <div class="actions">
+    <%= f.label :picture, 'Add a picture from you computer:' %>
     <%= f.file_field :picture %>
+    <%= f.label :remote_picture_url, 'or add picture url' %>
+    <%= f.text_field :remote_picture_url %>
     <%= f.submit %>
   </div>
 <% end %>

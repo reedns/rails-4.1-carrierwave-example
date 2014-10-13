@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<%= @user.image_url.to_s %>
+<%= image_tag(@user.picture_url).to_s if @user.picture? %>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
