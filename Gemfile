@@ -6,8 +6,9 @@ gem 'rails', '4.1.6'
 gem 'sass-rails', '~> 4.0.3'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'spring', group: :development
-gem 'sqlite3'
+gem 'pg'
 gem 'turbolinks'
 gem 'uglifier', '>= 1.3.0'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'fog'
