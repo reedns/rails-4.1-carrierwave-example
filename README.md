@@ -14,7 +14,7 @@ Follow along with the carrierwave documentation: https://github.com/carrierwaveu
 
 One thing I did differently than the documentation was setup initializer/carrierwave.rb like this:
 
-'''ruby
+```ruby
 
 CarrierWave.configure do |config|
   if Rails.env.production?
@@ -29,7 +29,7 @@ CarrierWave.configure do |config|
     config.storage = :file
   end
 end
-'''
+```
 
 This implementation sets up storage to be hosted on S3 via fog in the production environment and file storage for the development environment.
 
